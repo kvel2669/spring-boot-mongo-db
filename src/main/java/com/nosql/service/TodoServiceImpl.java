@@ -2,6 +2,7 @@ package com.nosql.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.ArrayList;
 
 import javax.validation.ConstraintViolationException;
 

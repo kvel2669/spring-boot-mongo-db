@@ -68,7 +68,7 @@ public class TodoServiceImpl implements TodoService {
 
 	@Override
 	public List<String> getOnlyTodos() {
-		return todoRepository.getOnlyTodos().stream().map(todo-> todo.getTodo()).toList();
+		return todoRepository.getOnlyTodos().stream().map(todo-> todo.getTodo()).collect(Collectors.toList());
 	}
 
 	@Override
